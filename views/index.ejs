@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="/css/home.css">
+  </head>
+  <body>
+
+    
+
+    <div class="inner">
+   <div class="pokemon-list">
+      <% pokemons.forEach(function(pokemon) { %>
+        <a href="/pokemon/<%= pokemon.id %>"><%= pokemon.nome %> </a>
+      <% }); %>
+  </div>
+  </div>
+
+
+
+
+<div class="pokemon-form">
+  <h2>Add pokemon</h2>
+  <form action="/add-pokemon" method="POST">
+    <label for="nome">Nome</label>
+    <input type="text" name="nome" id="nome" required>
+
+    <label for="tipo">Tipo</label>
+    <input type="text" name="tipo" id="tipo" required>
+
+    <label for="peso">peso</label>
+    <input type="text" name="peso" id="peso" required>
+
+    <label for="altura">altura</label>
+    <input type="text" name="altura" id="altura" required>
+
+    <label for="lvlPoder">lvlPoder</label>
+    <input type="text" name="lvlPoder" id="lvlPoder" required>
+
+    <button type="submit">Adicionar pokemon</button>
+  </form>
+
+</div>
+  </body>
+</html>
