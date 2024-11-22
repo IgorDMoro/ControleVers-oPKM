@@ -17,12 +17,7 @@ const getPokemon = (req, res) => {
 const addPokemon = (req, res) => {
     const { nome, tipo, peso, altura, lvlPoder } = req.body
     pokemonModel.createPokemon(nome, tipo, peso, altura, lvlPoder)
-    res.redirect('/')
+    res.redirect('/add-pokemon')
 };
-
-const treinador = (req, res) => {
-    const {nome, idade} = req.body
-    
-}
 
 module.exports={ getAllPokemons, getPokemon, addPokemon};
