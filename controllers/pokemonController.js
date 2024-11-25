@@ -14,10 +14,15 @@ const getPokemon = (req, res) => {
     }   
 };
 
-const addPokemon = (req, res) => {
-    const { nome, tipo, peso, altura, lvlPoder } = req.body
-    pokemonModel.createPokemon(nome, tipo, peso, altura, lvlPoder)
-    res.redirect('/add-pokemon')
+const getAddPokemonPage = (req, res) => {
+    res.render('add-pokemon');
 };
 
-module.exports={ getAllPokemons, getPokemon, addPokemon};
+const addPokemon = (req, res) => {
+    const { nome, tipo, peso, altura, lvlPoder } = req.body;
+    pokemonModel.createPokemon(nome, tipo, peso, altura, lvlPoder);
+    res.redirect('/'); // Redirecione para a página inicial ou outra página após o cadastro
+};
+
+module.exports = { getAllPokemons, getPokemon, getAddPokemonPage, addPokemon };
+

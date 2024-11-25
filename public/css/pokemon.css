@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'Pokemon Hollow';
     src: url('/fonts/Pokemon-hollow.ttf') format('truetype');
@@ -7,6 +8,7 @@
     font-family: 'Pokemon Solid';
     src: url('/fonts/Pokemon-solid.ttf') format('truetype');
 }
+
 
 .logo{
     height: auto;
