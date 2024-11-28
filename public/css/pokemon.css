@@ -16,14 +16,9 @@
 }
 
 header {
-    border: 2px solid #219ebc;
-    background-color: #8ecae6;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-size: 28%;
-    background-position: 50%;
-    width: 750px;
-    margin: 0 auto;
-    position:static;
+    /* border: 2px solid #ffffff; */
+    background-color: #4b575f; 
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.1);
 }
 
 .cabecalho {
@@ -31,12 +26,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;   
-    
 }
 
 nav {
     display: flex;
-        
 }
 
 nav a {
@@ -51,6 +44,19 @@ nav a {
          1px -1px 0 #023047,
         -1px  1px 0 #023047,
          1px  1px 0 #023047;
+}
+
+nav a:hover {
+    color: #ffb703; 
+    text-shadow: 0 0 10px #ffb703, 0 0 15px #ffb703; 
+    transform: scale(1.1); 
+    transition: all 0.3s ease; 
+}
+
+.logo:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+    filter: brightness(1.2); 
 }
 
 
