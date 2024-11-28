@@ -1,3 +1,4 @@
+
 const pokemons = [
   { id: 1, nome: 'Bulbassauro', tipo: 'Vegetal/Veneno', peso: 6.9, altura: 0.8, lvlPoder: 45 },
   { id: 2, nome: 'Ivysaur', tipo: 'Vegetal/Veneno', peso: 13.0, altura: 1.0, lvlPoder: 60 },
@@ -114,20 +115,53 @@ const pokemons = [
   { id: 113, nome: 'Chansey', tipo: 'Normal', peso: 34.6, altura: 1.1, lvlPoder: 50 },
   { id: 114, nome: 'Tangela', tipo: 'Vegetal', peso: 35.0, altura: 1.0, lvlPoder: 65 },
   { id: 115, nome: 'Kangaskhan', tipo: 'Normal', peso: 80.0, altura: 2.2, lvlPoder: 90 },
+  { id: 116, nome: 'Horsea', tipo: 'Água', peso: 8.0, altura: 0.4, lvlPoder: 45 },
+  { id: 117, nome: 'Seadra', tipo: 'Água', peso: 25.0, altura: 1.2, lvlPoder: 80 },
+  { id: 118, nome: 'Goldeen', tipo: ' Água', peso: 15.0, altura: 0.6, lvlPoder: 55 },
+  { id: 119, nome: 'Seaking', tipo: 'Água', peso: 39.0, altura: 1.3, lvlPoder: 90 },
+  { id: 120, nome: 'Staryu', tipo: 'Água', peso: 34.5, altura: 0.8, lvlPoder: 55 },
+  { id: 121, nome: 'Starmie', tipo: 'Água/Psíquico', peso: 80.0, altura: 1.1, lvlPoder: 90 },
+  { id: 122, nome: 'Mr. Mime', tipo: 'Psíquico', peso: 54.5, altura: 1.3, lvlPoder: 75 },
+  { id: 123, nome: 'Scyther', tipo: 'Inseto/Voador', peso: 56.0, altura: 1.5, lvlPoder: 90 },
+  { id: 124, nome: 'Jynx', tipo: 'Gelo/Psíquico', peso: 40.6, altura: 1.4, lvlPoder: 85 },
+  { id: 125, nome: 'Electabuzz', tipo: 'Elétrico', peso: 30.0, altura: 1.1, lvlPoder: 90 },
+  { id: 126, nome: 'Magmar', tipo: 'Fogo', peso: 44.5, altura: 1.3, lvlPoder: 90 },
+  { id: 127, nome: 'Pinsir', tipo: 'Inseto', peso: 55.0, altura: 1.5, lvlPoder: 90 },
+  { id: 128, nome: 'Tauros', tipo: 'Normal', peso: 88.4, altura: 1.4, lvlPoder: 90 },
+  { id: 129, nome: 'Magikarp', tipo: 'Água', peso: 10.0, altura: 0.9, lvlPoder: 10 },
+  { id: 130, nome: 'Gyarados', tipo: 'Água/Voador', peso: 235.0, altura: 6.5, lvlPoder: 150 },
+  { id: 131, nome: 'Lapras', tipo: 'Água/Gelo', peso: 220.0, altura: 2.5, lvlPoder: 130 },
+  { id: 132, nome: 'Ditto', tipo: 'Normal', peso: 4.0, altura: 0.3, lvlPoder: 45 },
+  { id: 133, nome: 'Eevee', tipo: 'Normal', peso: 6.5, altura: 0.3, lvlPoder: 55 },
+  { id: 134, nome: 'Vaporeon', tipo: 'Água', peso: 29.0, altura: 1.0, lvlPoder: 130 },
+  { id: 135, nome: 'Jolteon', tipo: 'Elétrico', peso: 24.5, altura: 0.8, lvlPoder: 130 },
+  { id: 136, nome: 'Flareon', tipo: 'Fogo', peso: 25.0, altura: 0.9, lvlPoder: 130 },
+  { id: 137, nome: 'Porygon', tipo: 'Normal', peso: 36.5, altura: 0.8, lvlPoder: 65 },
+  { id: 138, nome: 'Omanyte', tipo: 'Rocha/Água', peso: 7.5, altura: 0.4, lvlPoder: 40 },
+  { id: 139, nome: 'Omastar', tipo: 'Rocha/Água', peso: 35.0, altura: 1.0, lvlPoder: 85 },
+  { id: 140, nome: 'Kabuto', tipo: 'Rocha/Água', peso: 11.5, altura: 0.5, lvlPoder: 60 },
+  { id: 141, nome: 'Kabutops', tipo: 'Rocha/Água', peso: 40.5, altura: 1.3, lvlPoder: 90 },
+  { id: 142, nome: 'Aerodactyl', tipo: 'Pedra/Voador', peso: 59.0, altura: 1.8, lvlPoder: 105 },
+  { id: 143, nome: 'Snorlax', tipo: 'Normal', peso: 460.0, altura: 2.1, lvlPoder: 110 },
+  { id: 144, nome: 'Articuno', tipo: 'Gelo/Voador', peso: 55.4, altura: 1.7, lvlPoder: 100 },
+  { id: 145, nome: 'Zapdos', tipo: 'Elétrico/Voador', peso: 52.6, altura: 1.6, lvlPoder: 100 },
+  { id: 146, nome: 'Moltres', tipo: 'Fogo/Voador', peso: 60.0, altura: 2.0, lvlPoder: 100 },
+  { id: 147, nome: 'Dratini', tipo: 'Dragão', peso: 3.3, altura: 1.8, lvlPoder: 41 },
+  { id: 148, nome: 'Dragonair', tipo: 'Dragão', peso: 16.5, altura: 4.0, lvlPoder: 61 },
+  { id: 149, nome: 'Dragonite', tipo: 'Dragão/Voador', peso: 210.0, altura: 2.2, lvlPoder: 134 },
+  { id: 150, nome: 'Mewtwo', tipo: 'Psíquico', peso: 122.0, altura: 2.0, lvlPoder: 130 },
+  { id: 151, nome: 'Mew', tipo: 'Psíquico', peso: 4.0, altura: 0.4, lvlPoder: 100 },
 ];
 
-  
-  const getPokemons = () => pokemons;
-  
-  const getPokemonById = (id) => pokemons.find(p => p.id === parseInt(id));
-  
+const getPokemons = () => pokemons;
 
-  const getPokemonByName = (nome) => pokemons.find(p => p.nome.toLowerCase() === nome.toLowerCase());
+const getPokemonById = (id) => pokemons.find(p => p.id === parseInt(id));
 
-  
-  const createPokemon = (nome, tipo, peso, altura, lvlPoder) => {
-    const novoPokemon = { id: pokemons.length + 1, nome, tipo, peso, altura, lvlPoder};
-    pokemons.push(novoPokemon);
-  };
-  
-  module.exports = { getPokemons, getPokemonById, getPokemonByName, createPokemon };
+const getPokemonByName = (nome) => pokemons.find(p => p.nome.toLowerCase() === nome.toLowerCase());
+
+const createPokemon = (nome, tipo, peso, altura, lvlPoder) => {
+  const novoPokemon = { id: pokemons.length + 1, nome, tipo, peso, altura, lvlPoder };
+  pokemons.push(novoPokemon);
+};
+
+module.exports = { getPokemons, getPokemonById, getPokemonByName, createPokemon };
