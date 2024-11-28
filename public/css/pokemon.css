@@ -52,3 +52,176 @@ nav a {
         -1px  1px 0 #023047,
          1px  1px 0 #023047;
 }
+
+
+.pokemon-card {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: background 0.5s ease, transform 0.3s ease;
+    color: white;
+    font-family: 'Pokemon Solid';
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+
+.pokemon-card:hover {
+    transform: scale(1.05);
+}
+
+.pokemon-card[data-tipo="Fogo"] {
+    background: linear-gradient(45deg, #ff4500, #ff6347);
+    animation: flames 1.5s infinite;
+}
+
+.pokemon-card[data-tipo="Fogo"] h2 {
+    color: #ffffff; 
+}
+
+
+.pokemon-card[data-tipo="Água"] {
+    background: linear-gradient(45deg, #00bfff, #1e90ff);
+    animation: waves 4s infinite linear;
+}
+
+.pokemon-card[data-tipo="Água"] h2 {
+    color: #ffffff; 
+}
+
+
+.pokemon-card[data-tipo="Vegetal"] {
+    background: linear-gradient(45deg, #228b22, #32cd32);
+    animation: grassMove 3s infinite;
+}
+
+.pokemon-card[data-tipo="Vegetal"] h2 {
+    color: #ffffff; 
+}
+
+.pokemon-card[data-tipo="Elétrico"] {
+    background: linear-gradient(45deg, #ffd700, #ffec8b);
+    animation: lightning 0.8s infinite;
+}
+
+.pokemon-card[data-tipo="Elétrico"] h2 {
+    color: #000000; 
+}
+
+.pokemon-card[data-tipo="Rocha"] {
+    background: linear-gradient(45deg, #8b4513, #a0522d);
+    animation: stoneMove 3s infinite;
+}
+
+.pokemon-card[data-tipo="Rocha"] h2 {
+    color: #ffffff; 
+}
+
+.pokemon-card[data-tipo="Normal"] {
+    background: linear-gradient(45deg, #f4a300, #d67e00);
+    animation: normalMove 3s infinite;
+}
+
+.pokemon-card[data-tipo="Normal"] h2 {
+    color: #ffffff; 
+}
+
+.pokemon-card[data-tipo="Psíquico"] {
+    background: linear-gradient(45deg, #f08080, #ee82ee);
+    animation: psychicGlow 2s infinite;
+}
+
+.pokemon-card[data-tipo="Psíquico"] h2 {
+    color: #ffffff; 
+}
+
+.pokemon-card[data-tipo="Fada"] {
+    background: linear-gradient(45deg, #ffb6c1, #ff69b4);
+    animation: fairyGlow 2s infinite;
+}
+
+.pokemon-card[data-tipo="Fada"] h2 {
+    color: #ffffff; 
+}
+
+.pokemon-card[data-tipo="Dragão"] {
+    background: linear-gradient(45deg, #800080, #8b0000);
+    animation: dragonFlames 2s infinite;
+}
+
+.pokemon-card[data-tipo="Dragão"] h2 {
+    color: #ffffff; 
+}
+
+.pokemon-card[data-tipo="Gelo"] {
+    background: linear-gradient(45deg, #00bfff, #87cefa);
+    animation: iceGlow 1.5s infinite;
+}
+
+.pokemon-card[data-tipo="Gelo"] h2 {
+    color: #ffffff; 
+}
+
+.pokemon-card[data-tipo="Voador"] {
+    background: linear-gradient(45deg, #87cefa, #4682b4);
+    animation: flyingMove 4s infinite linear;
+}
+
+.pokemon-card[data-tipo="Voador"] h2 {
+    color: #ffffff; 
+}
+
+
+.pokemon-card[data-tipo="Lutador"] {
+    background: linear-gradient(45deg, #d14a3f, #e53935);
+    animation: fighterMove 3s infinite;
+}
+
+.pokemon-card[data-tipo="Lutador"] h2 {
+    color: #ffffff; 
+}
+
+
+.pokemon-card[data-tipo="Inseto"] {
+    background: linear-gradient(45deg, #a8d16c, #82e0a4);
+    animation: insectMove 4s infinite linear;
+}
+
+.pokemon-card[data-tipo="Inseto"] h2 {
+    color: #2c6f2f; 
+}
+
+.pokemon-card[data-tipo="Fantasma"] {
+    background: linear-gradient(45deg, #6a4c93, #7b68ee);
+    animation: ghostGlow 2s infinite;
+}
+
+.pokemon-card[data-tipo="Fantasma"] h2 {
+    color: #ffffff; 
+}
+
+.pokemon-card[data-tipo="Veneno"] {
+    background: linear-gradient(45deg, #9b4dca, #a1c6ff);
+    animation: poisonGlow 2s infinite;
+}
+
+.pokemon-card[data-tipo="Veneno"] h2 {
+    color: #ffffff; 
+}
+
+
+.pokemon-card[data-tipo="Terra"] {
+    background: linear-gradient(45deg, #9e7b3d, #b57d47);
+    animation: earthMove 3s infinite;
+}
+
+.pokemon-card[data-tipo="Terra"] h2 {
+    color: #ffffff; 
+}
+
+
+.pokemon-card p {
+    color: #333;
+    font-size: 16px;
+}
