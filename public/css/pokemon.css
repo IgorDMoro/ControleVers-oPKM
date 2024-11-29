@@ -16,9 +16,14 @@
 }
 
 header {
-    /* border: 2px solid #ffffff; */
-    background-color: #4b575f; 
-    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid #219ebc;
+    background-color: #8ecae6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-size: 28%;
+    background-position: 50%;
+    width: 750px;
+    margin: 0 auto;
+    position:static;
 }
 
 .cabecalho {
@@ -26,10 +31,12 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;   
+    
 }
 
 nav {
     display: flex;
+        
 }
 
 nav a {
@@ -44,19 +51,6 @@ nav a {
          1px -1px 0 #023047,
         -1px  1px 0 #023047,
          1px  1px 0 #023047;
-}
-
-nav a:hover {
-    color: #ffb703; 
-    text-shadow: 0 0 10px #ffb703, 0 0 15px #ffb703; 
-    transform: scale(1.1); 
-    transition: all 0.3s ease; 
-}
-
-.logo:hover {
-    transform: scale(1.1); 
-    transition: transform 0.3s ease; 
-    filter: brightness(1.2); 
 }
 
 
@@ -224,6 +218,152 @@ nav a:hover {
 
 .pokemon-card[data-tipo="Terra"] h2 {
     color: #ffffff; 
+}
+
+.pokemon-card[data-tipo="Vegetal/Veneno"] {
+    background: linear-gradient(45deg, #228b22, #32cd32, #9b4dca, #a1c6ff);
+    animation: grassAndPoison 2s infinite alternate;
+}
+@keyframes grassAndPoison {
+    0% { background: linear-gradient(45deg, #228b22, #32cd32); }
+    50% { background: linear-gradient(45deg, #228b22, #9b4dca); }
+    100% { background: linear-gradient(45deg, #32cd32, #a1c6ff); }
+}
+
+.pokemon-card[data-tipo="Fogo/Voador"] {
+    background: linear-gradient(45deg, #ff4500, #ff6347, #87cefa, #4682b4);
+    animation: flamesAndFlying 2s infinite alternate;
+}
+@keyframes flamesAndFlying {
+    0% { background: linear-gradient(45deg, #ff4500, #ff6347); }
+    50% { background: linear-gradient(45deg, #ff4500, #87cefa); }
+    100% { background: linear-gradient(45deg, #ff6347, #4682b4); }
+}
+
+.pokemon-card[data-tipo="Inseto/Voador"] {
+    background: linear-gradient(45deg, #a8d16c, #82e0a4, #87cefa, #4682b4);
+    animation: insectAndFlying 2s infinite alternate;
+}
+@keyframes insectAndFlying {
+    0% { background: linear-gradient(45deg, #a8d16c, #82e0a4); }
+    50% { background: linear-gradient(45deg, #a8d16c, #87cefa); }
+    100% { background: linear-gradient(45deg, #82e0a4, #4682b4); }
+}
+
+.pokemon-card[data-tipo="Inseto/Veneno"] {
+    background: linear-gradient(45deg, #a8d16c, #82e0a4, #9b4dca, #a1c6ff);
+    animation: insectAndPoison 2s infinite alternate;
+}
+@keyframes insectAndPoison {
+    0% { background: linear-gradient(45deg, #a8d16c, #82e0a4); }
+    50% { background: linear-gradient(45deg, #a8d16c, #9b4dca); }
+    100% { background: linear-gradient(45deg, #82e0a4, #a1c6ff); }
+}
+
+.pokemon-card[data-tipo="Normal/Voador"] {
+    background: linear-gradient(45deg, #f4a300, #d67e00, #87cefa, #4682b4);
+    animation: normalAndFlying 2s infinite alternate;
+}
+@keyframes normalAndFlying {
+    0% { background: linear-gradient(45deg, #f4a300, #d67e00); }
+    50% { background: linear-gradient(45deg, #f4a300, #87cefa); }
+    100% { background: linear-gradient(45deg, #d67e00, #4682b4); }
+}
+
+.pokemon-card[data-tipo="Veneno/Voador"] {
+    background: linear-gradient(45deg, #9b4dca, #a1c6ff, #87cefa, #4682b4);
+    animation: poisonAndFlying 2s infinite alternate;
+}
+@keyframes poisonAndFlying {
+    0% { background: linear-gradient(45deg, #9b4dca, #a1c6ff); }
+    50% { background: linear-gradient(45deg, #9b4dca, #87cefa); }
+    100% { background: linear-gradient(45deg, #a1c6ff, #4682b4); }
+}
+
+.pokemon-card[data-tipo="Veneno/Terra"] {
+    background: linear-gradient(45deg, #9b4dca, #a1c6ff, #9e7b3d, #b57d47);
+    animation: poisonAndEarth 2s infinite alternate;
+}
+@keyframes poisonAndEarth {
+    0% { background: linear-gradient(45deg, #9b4dca, #a1c6ff); }
+    50% { background: linear-gradient(45deg, #9b4dca, #9e7b3d); }
+    100% { background: linear-gradient(45deg, #a1c6ff, #b57d47); }
+}
+
+
+.pokemon-card[data-tipo="Elétrico/Metálico"] {
+    background: linear-gradient(45deg, #ffd700, #ffec8b, #b8b8b8, #808080);
+    animation: electricAndMetallic 2s infinite alternate;
+}
+@keyframes electricAndMetallic {
+    0% { background: linear-gradient(45deg, #ffd700, #ffec8b); }
+    50% { background: linear-gradient(45deg, #ffd700, #b8b8b8); }
+    100% { background: linear-gradient(45deg, #ffec8b, #808080); }
+}
+
+.pokemon-card[data-tipo="Água/Psíquico"] {
+    background: linear-gradient(45deg, #00bfff, #1e90ff, #f08080, #ee82ee);
+    animation: wavesAndPsychic 2s infinite alternate;
+}
+@keyframes wavesAndPsychic {
+    0% { background: linear-gradient(45deg, #00bfff, #1e90ff); }
+    50% { background: linear-gradient(45deg, #00bfff, #f08080); }
+    100% { background: linear-gradient(45deg, #1e90ff, #ee82ee); }
+}
+
+.pokemon-card[data-tipo="Pedra/Terra"] {
+    background: linear-gradient(45deg, #8b4513, #a0522d, #9e7b3d, #b57d47);
+    animation: stoneAndEarth 2s infinite alternate;
+}
+@keyframes stoneAndEarth {
+    0% { background: linear-gradient(45deg, #8b4513, #a0522d); }
+    50% { background: linear-gradient(45deg, #8b4513, #9e7b3d); }
+    100% { background: linear-gradient(45deg, #a0522d, #b57d47); }
+}
+
+.pokemon-card[data-tipo="Água/Gelo"] {
+    background: linear-gradient(45deg, #00bfff, #87cefa);
+    animation: iceGlow 1.5s infinite;
+}
+
+.pokemon-card[data-tipo="Fantasma/Veneno"] {
+    background: linear-gradient(45deg, #6a4c93, #7b68ee, #9b4dca, #a1c6ff);
+    animation: ghostAndPoison 2s infinite alternate;
+}
+@keyframes ghostAndPoison {
+    0% { background: linear-gradient(45deg, #6a4c93, #7b68ee); }
+    50% { background: linear-gradient(45deg, #6a4c93, #9b4dca); }
+    100% { background: linear-gradient(45deg, #7b68ee, #a1c6ff); }
+}
+
+.pokemon-card[data-tipo="Terra/Pedra"] {
+    background: linear-gradient(45deg, #9e7b3d, #b57d47, #8b4513, #a0522d);
+    animation: earthAndStone 2s infinite alternate;
+}
+@keyframes earthAndStone {
+    0% { background: linear-gradient(45deg, #9e7b3d, #b57d47); }
+    50% { background: linear-gradient(45deg, #9e7b3d, #8b4513); }
+    100% { background: linear-gradient(45deg, #b57d47, #a0522d); }
+}
+
+.pokemon-card[data-tipo="Água/Voador"] {
+    background: linear-gradient(45deg, #00bfff, #1e90ff, #87cefa, #4682b4);
+    animation: waterAndFlying 2s infinite alternate;
+}
+@keyframes waterAndFlying {
+    0% { background: linear-gradient(45deg, #00bfff, #1e90ff); }
+    50% { background: linear-gradient(45deg, #00bfff, #87cefa); }
+    100% { background: linear-gradient(45deg, #1e90ff, #4682b4); }
+}
+
+.pokemon-card[data-tipo="Pedra/Voador"] {
+    background: linear-gradient(45deg, #8b4513, #a0522d, #87cefa, #4682b4);
+    animation: stoneAndFlying 2s infinite alternate;
+}
+@keyframes stoneAndFlying {
+    0% { background: linear-gradient(45deg, #8b4513, #a0522d); }
+    50% { background: linear-gradient(45deg, #8b4513, #87cefa); }
+    100% { background: linear-gradient(45deg, #a0522d, #4682b4); }
 }
 
 
