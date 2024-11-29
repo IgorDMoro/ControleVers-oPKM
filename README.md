@@ -1,5 +1,6 @@
 Nosso projeto é uma Pokédex digital, desenvolvida para permitir a consulta de informações detalhadas sobre os Pokémons, incluindo suas características, tipos e habilidades. 
 Além disso, a plataforma oferece a funcionalidade de registrar novas espécies de Pokémons descobertas, promovendo a expansão contínua do catálogo.
+
 -----------------------IMAGENS------------------------------------
 Tela Inicial da Pokedex:
 ![image](https://github.com/user-attachments/assets/acb8f58c-b7b1-4b8f-98dc-3b4f8c2a6cb0)
